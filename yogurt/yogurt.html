@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greek Yogurt 🥛</title>
+    <style>
+      body {
+        background: linear-gradient(-20deg, rgb(233, 222, 250) 0%, rgb(251, 252, 219) 100%);
+        );
+      }
+      h1 {
+        text-align: center;
+        color: #7d51e8;
+      }
+      h2 {
+        text-align: center;
+        border: 1px solid #7d51e8;
+        padding: 10px;
+        font-size: 18px;
+        border-radius: 4px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 6px;
+      }
+      p {
+        line-height: 1, 5;
+        font-size: 11px;
+        margin: 20 0 10px;
+        font-size: 18px;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        background-color: #7d51e8;
+        color: #fff;
+        font-size: 18;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 300ms ease-in-out;
+      }
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px 60px;
+        background : #fff;
+      }
+      .footer {
+        text-align: center;
+      }
+      .learn-more {
+        padding-top: 10px;
+        text-decoration: none;
+        color: #7d51e8;
+        font-size: 16px;
+        margin: 0 auto;
+      }
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>I love yogurt</h1>
+      <h2>Especially Greek Yogurt</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/032/346/original/greek-yogurt.jpeg?1650490994"
+        alt="Healthy Greek Yogurt"
+      />
+      <p>
+        You may know that probiotics can improve your gut health, but did you
+        know those benefits extend to your mental health as well? Studies have
+        shown that adding probiotics to your diet (like those found in Greek
+        yogurt) can reduce stress and anxiety.
+      </p>
+      <a
+        href="https://www.tasteofhome.com/article/11-simple-habits-relieve-holiday-stress-anxiety/"
+        target="_blank"
+        class="learn-more"
+      >
+        💡Learn more
+      </a>
+      <br />
+      <br />
+      <button>👉 Buy Greek Yogurt</button>
+      <p class="footer">
+        This page was built by Aysata
+        <a href="https://gist.github.com/AissataAbby" target="_blank">
+          <br />
+          Aysata
+        </a>
+      </p>
+    </div>
+    <script>
+      function buy() {
+        let name = prompt("What's your name?");
+        let email = prompt("what is your email address?");
+        let emoji = prompt("What is your favorite emoji?");
+
+        alert(
+          "Thank you" +
+            " " +
+            name +
+            "!!" +
+            "," +
+            " " +
+            "we will be in touch by email, meanwhile Have a lot of yogurt!" +
+            " " +
+            emoji
+        );
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", buy);
+    </script>
+  </body>
+</html>
